@@ -1,0 +1,13 @@
+allprojects{
+    defaultTasks 'run'
+    task 'build'
+    task ('run'){
+        dependsOn 'build'
+    }
+    task ('test'){
+        dependsOn 'build'
+    }
+}
+
+run.dependsOn subprojects.run
+test.dependsOn subprojects.test

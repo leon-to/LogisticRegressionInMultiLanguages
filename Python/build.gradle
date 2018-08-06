@@ -1,0 +1,11 @@
+run.doLast{
+    exec{
+        commandLine 'python', 'LogisticRegression.py'
+    }
+}
+
+test.doLast{
+    exec{
+        commandLine 'python', 'LogisticRegressionTest.py'
+    }
+}
