@@ -1,10 +1,10 @@
-run.doLast{
+task('run').doLast{
     exec{
         commandLine 'python', 'LogisticRegression.py'
     }
 }
 
-test.doLast{
+task('test').doLast{
     exec{
         commandLine 'python', 'LogisticRegressionTest.py'
     }

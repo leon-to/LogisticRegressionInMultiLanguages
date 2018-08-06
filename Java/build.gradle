@@ -1,0 +1,12 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+repositories{
+    mavenCentral()
+}
+
+dependencies{
+    compile (group: 'org.apache.commons', name: 'commons-csv', version: '1.5')
+}
+
+mainClassName = 'com.github.LogisticRegression'
